@@ -1,5 +1,5 @@
-const nome = ""; 
-const endereço = "";
+let nome = ""; 
+let endereço = "";
 let prato = "";
 let valorprato = "";
 let valorpratonumber = 0;
@@ -123,20 +123,41 @@ function selecionaSobremesa(item) {
     }
 }
 
-function enviarwhats(){
-    const link = document.querySelector(".linkwhats");
-    msgwhats = `Olá, gostaria de fazer o pedido:\n- Prato: ${prato}\n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\nTotal: R$ ${total.toFixed(2).replace(".", ",")}`
-    console.log(msgwhats);
-    console.log(encodeURIComponent(msgwhats));
-    link.href = `https://wa.me/5541999198730?text=${encodeURIComponent(msgwhats)}`;
+function confirma(){
+    let conf = document.querySelector(".confirmapedido");
+    conf.classList.remove("escondido");
+
+    conf = document.querySelector(".p1");
+    conf.innerHTML = prato;
+
+    conf = document.querySelector(".b1");
+    conf.innerHTML = bebida;
+
+    conf = document.querySelector(".s1");
+    conf.innerHTML = sobremesa;
+
+    conf = document.querySelector(".vp1");
+    conf.innerHTML = valorprato.replace("R$ ", "");
+
+    conf = document.querySelector(".vb1");
+    conf.innerHTML = valorbebida.replace("R$ ", "");
+
+    conf = document.querySelector(".vs1");
+    conf.innerHTML = valorsobremesa.replace("R$ ", "");
+
+    conf = document.querySelector(".total");
+    conf.innerHTML = `R$ ${total.toFixed(2).replace(".", ",")}`;
 }
 
+function btncancelar(){
+    const canc = document.querySelector(".confirmapedido");
+    canc.classList.add("escondido")
+}
 
-
-
-
-// recebe nome e endereço nas variaveis globais
-/* function nomeEnd(){
-    const nome = prompt("Por gentileza, digite o seu nome:");
-    const endereço = prompt("Por gentileza, digite seu endereço:");
-} */
+function enviarwhats(){
+    nome = prompt("Por gentileza, digite o seu nome:");
+    endereço = prompt("Por gentileza, digite seu endereço:");
+    const link = document.querySelector(".linkwhats");
+    msgwhats = `Olá, gostaria de fazer o pedido:\n- Prato: ${prato}\n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\nTotal: R$ ${total.toFixed(2).replace(".", ",")}\n\nNome: ${nome}\nEndereço: ${endereço}`
+    link.href = `https://wa.me/5541999198730?text=${encodeURIComponent(msgwhats)}`;
+} 

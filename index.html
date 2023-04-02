@@ -19,11 +19,10 @@
     </div>
 
     <div class="footer">
-        <a href="#" class="linkwhats"><button disabled data-test="order-btn" class="fechapedido" onclick="enviarwhats()">
+        <button disabled data-test="order-btn" class="fechapedido" onclick="confirma()">
             Selecione os 3 itens para fechar o pedido
         </button>
-        </a>
-    </div>
+      </div>
 
     <div class="corpo">
         <div class="pratos"> 
@@ -32,30 +31,30 @@
             </div>           
             <div class="itens">
                 <div data-test="dish" class="item" onclick="selecionaPrato(this)">
-                    <img src="./img/frango_yin_yang.png" alt="">
+                    <img src="./img/rollmops.jpg" alt="">
                     <ion-icon class="iconeselecionado notcheck" name="checkmark-circle"></ion-icon>
                     <div class="descricao">
-                        <h1 data-test="item-name" class="nome_prato">Frango Yin Yang</h1>
-                        <p>Um pouco de batata, um pouco de salada</p>
-                        <h2 data-test="item-price" class="valor_prato">R$ 14,90</h2>
+                        <h1 data-test="item-name" class="nome_prato">Rollmops</h1>
+                        <p>Iguaria para os fortes</p>
+                        <h2 data-test="item-price" class="valor_prato">R$ 5,00</h2>
                     </div>
                 </div>
                 <div data-test="dish" class="item" onclick="selecionaPrato(this)">
-                    <img src="./img/frango_yin_yang.png" alt="">
+                    <img src="./img/costela.jpg" alt="">
                     <ion-icon class="iconeselecionado notcheck" name="checkmark-circle"></ion-icon>
                     <div class="descricao">
-                        <h1 data-test="item-name" class="nome_prato">Hot Dogo</h1>
-                        <p>Um pouco de batata, um pouco de salada</p>
-                        <h2 data-test="item-price" class="valor_prato">R$ 11,30</h2>
+                        <h1 data-test="item-name" class="nome_prato">Costela</h1>
+                        <p>Famosa costela do Gato Preto</p>
+                        <h2 data-test="item-price" class="valor_prato">R$ 32,90</h2>
                     </div>
                 </div>
                 <div data-test="dish" class="item" onclick="selecionaPrato(this)">
-                    <img src="./img/frango_yin_yang.png" alt="">
+                    <img src="./img/pf.jpg" alt="">
                     <ion-icon class="iconeselecionado notcheck" name="checkmark-circle"></ion-icon>
                     <div class="descricao">
-                        <h1 data-test="item-name" class="nome_prato">Axushi</h1>
-                        <p>Um pouco de batata, um pouco de salada</p>
-                        <h2 data-test="item-price" class="valor_prato">R$ 32,75</h2>
+                        <h1 data-test="item-name" class="nome_prato">Prato Feito</h1>
+                        <p>Um simples prato feito</p>
+                        <h2 data-test="item-price" class="valor_prato">R$ 10,15</h2>
                     </div>
                 </div>
             </div>
@@ -66,30 +65,30 @@
             </div>
             <div class="itens">
                 <div data-test="drink" class="item" onclick="selecionaBebida(this)">
+                    <img src="./img/bm.jpeg" alt="">
+                    <ion-icon class="iconeselecionado notcheck" name="checkmark-circle"></ion-icon>
+                    <div class="descricao">
+                        <h1 data-test="item-name" class="nome_bebida">Indian Chai</h1>
+                        <p>Indian Chai do BubbleMix</p>
+                        <h2 data-test="item-price" class="valor_bebida">R$ 16,50</h2>
+                    </div>
+                </div>
+                <div data-test="drink" class="item" onclick="selecionaBebida(this)">
+                    <img src="./img/corote.webp" alt="">
+                    <ion-icon class="iconeselecionado notcheck" name="checkmark-circle"></ion-icon>
+                    <div class="descricao">
+                        <h1 data-test="item-name" class="nome_bebida">Corote</h1>
+                        <p>Corote, o tradicional esquenta antes da balada</p>
+                        <h2 data-test="item-price" class="valor_bebida">R$ 5,69</h2>
+                    </div>
+                </div>
+                <div data-test="drink" class="item" onclick="selecionaBebida(this)">
                     <img src="./img/coca-cola.png" alt="">
                     <ion-icon class="iconeselecionado notcheck" name="checkmark-circle"></ion-icon>
                     <div class="descricao">
                         <h1 data-test="item-name" class="nome_bebida">Coquinha gelada</h1>
                         <p>Lata 350ml</p>
                         <h2 data-test="item-price" class="valor_bebida">R$ 4,90</h2>
-                    </div>
-                </div>
-                <div data-test="drink" class="item" onclick="selecionaBebida(this)">
-                    <img src="./img/coca-cola.png" alt="">
-                    <ion-icon class="iconeselecionado notcheck" name="checkmark-circle"></ion-icon>
-                    <div class="descricao">
-                        <h1 data-test="item-name" class="nome_bebida">Suco</h1>
-                        <p>Lata 350ml</p>
-                        <h2 data-test="item-price" class="valor_bebida">R$ 4,30</h2>
-                    </div>
-                </div>
-                <div data-test="drink" class="item" onclick="selecionaBebida(this)">
-                    <img src="./img/coca-cola.png" alt="">
-                    <ion-icon class="iconeselecionado notcheck" name="checkmark-circle"></ion-icon>
-                    <div class="descricao">
-                        <h1 data-test="item-name" class="nome_bebida">Breja</h1>
-                        <p>Lata 350ml</p>
-                        <h2 data-test="item-price" class="valor_bebida">R$ 7,50</h2>
                     </div>
                 </div>
             </div>  
@@ -104,44 +103,66 @@
                     <ion-icon class="iconeselecionado notcheck" name="checkmark-circle"></ion-icon>
                     <div class="descricao">
                         <h1 data-test="item-name" class="nome_sobremesa">Pudim</h1>
-                        <p>Apenas pudim</p>
+                        <p>do site pudim.com.br</p>
                         <h2 data-test="item-price" class="valor_sobremesa">R$ 7,90</h2>
                     </div>
                 </div>
                 <div data-test="dessert" class="item" onclick="selecionaSobremesa(this)">
-                    <img src="./img/pudim.png" alt="">
+                    <img src="./img/acai.jpg" alt="">
                     <ion-icon class="iconeselecionado notcheck" name="checkmark-circle"></ion-icon>
                     <div class="descricao">
-                        <h1 data-test="item-name" class="nome_sobremesa">Gelatina</h1>
-                        <p>Apenas pudim</p>
-                        <h2 data-test="item-price" class="valor_sobremesa">R$ 4,40</h2>
+                        <h1 data-test="item-name" class="nome_sobremesa">Barca de Açai</h1>
+                        <p>10% Açai, 90% misturas</p>
+                        <h2 data-test="item-price" class="valor_sobremesa">R$ 44,44</h2>
                     </div>
                 </div>
                 <div data-test="dessert" class="item" onclick="selecionaSobremesa(this)">
-                    <img src="./img/pudim.png" alt="">
+                    <img src="./img/churrosgourmet.jpg" alt="">
                     <ion-icon class="iconeselecionado notcheck" name="checkmark-circle"></ion-icon>
                     <div class="descricao">
-                        <h1 data-test="item-name" class="nome_sobremesa">Torta</h1>
-                        <p>Apenas pudim</p>
-                        <h2 data-test="item-price" class="valor_sobremesa">R$ 8,45</h2>
+                        <h1 data-test="item-name" class="nome_sobremesa">Churros Gourmet</h1>
+                        <p>Gourmet para inflacionarmos o valor</p>
+                        <h2 data-test="item-price" class="valor_sobremesa">R$ 18,75</h2>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<!--     <div class="confirmapedido escondido">
-        <div class="confirma">
-            <div>
-                <p>Confirme seu pedido</p>
+    <div class="confirmapedido escondido">
+        <div data-test="confirm-order-modal" class="confirma flex">
+            <div class="c1">
+                <p class="t1">Confirme seu pedido</p>
             </div>
-            <div>
-                <p></p>
-                <p></p>
+            <div class="flex tconf">
+                <p class="p1">Teste</p>
+                <p class="vp1">frango</p>
             </div>
-            <div></div>
-            <div></div>
+            <div class="flex tconf">
+                <p class="b1">Teste</p>
+                <p class="vb1">frango</p>
+            </div>
+            <div class="flex tconf">
+                <p class="s1">Teste</p>
+                <p class="vs1">frango</p>
+            </div>
+            <div class="flex tconf">
+                <p class="t1">TOTAL</p>
+                <p class="total"></p>
+            </div>
+            <div class="btntudocerto flex">
+                <a href="#" class="linkwhats">
+                    <button data-test="confirm-order-btn" class="tudocerto" onclick="enviarwhats()">
+                        Tudo certo, pode pedir!
+                    </button>
+                </a>
+            </div>
+            <div data-test="cancel-order-btn" class="btncancela flex">
+                <button  class="cancelar" onclick="btncancelar()">
+                    Cancelar
+                </button>
+            </div>
         </div>
-    </div> -->
+    </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="./js/index.js"></script>
 </body>
