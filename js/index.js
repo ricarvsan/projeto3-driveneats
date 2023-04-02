@@ -128,7 +128,7 @@ function enviarwhats(){
     msgwhats = `Olá, gostaria de fazer o pedido:\n- Prato: ${prato}\n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\nTotal: R$ ${total.toFixed(2).replace(".", ",")}`
     console.log(msgwhats);
     console.log(encodeURIComponent(msgwhats));
-    link.href = `https://wa.me/5541999198730?text=url${msgwhats}`;
+    link.href = `https://wa.me/5541999198730?text=${encodeURIComponent(msgwhats)}`;
 }
 
 
